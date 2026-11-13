@@ -18,7 +18,7 @@ jobs:
       - name: Apply App Icon and UI Updates
         run: |
           unzip -o app_icon_res.zip -d app/src/main/res/
-          unzip -o tariq_ui_update.zip -d app/src/main/res/
+          unzip -o tariq_ui_update.zip
       - name: Build Debug APK
         run: gradle assembleDebug
       - name: Upload APK
