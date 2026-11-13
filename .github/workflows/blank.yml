@@ -15,6 +15,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "9.3.1"
+      - name: Apply App Icon
+        run: unzip -o app_icon_res.zip -d app/src/main/res/
       - name: Build Debug APK
         run: gradle assembleDebug
       - name: Upload APK
